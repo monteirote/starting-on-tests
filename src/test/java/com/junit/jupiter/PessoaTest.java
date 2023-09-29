@@ -40,6 +40,12 @@ public class PessoaTest {
         Assertions.assertNotNull(p1);
     }
 
+    @Test
+    void isNameCorreto() {
+        Pessoa p1 = new Pessoa("Vinicius", LocalDateTime.now());
+        assertEquals("Vinicius", p1.getNome());
+    }
+
 
 
 }
